@@ -613,7 +613,7 @@ footer {
   }
   .banner {
     height: 500px;
-    background-image: url("images/baseball-background.png");
+    background-image: url("images/baseball-background-smaller.png");
     background-size: 100%;
   }
   .banner span {
@@ -621,7 +621,7 @@ footer {
   }
   .brand-value {
     height: 500px;
-    background-image: url("images/homeplate-background.png");
+    background-image: url("images/homeplate-background-smaller.png");
     background-size: 100%;
   }
   .brand-value span {
@@ -659,7 +659,7 @@ footer {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    background-image: url("images/grass.png");
+    background-image: url("images/grass-smaller.png");
     background-size: 100%;
   }
   .customer-feedbacks .content-title {
