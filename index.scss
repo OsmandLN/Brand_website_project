@@ -1,4 +1,11 @@
 // reset css
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -77,17 +84,12 @@ input:invalid {
   width: 0px;
   background: transparent;
 }
+
 // import font styles
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
 // mobile style start
-
-body {
-  max-width: 575px;
-}
 
 // header
 header {
@@ -99,35 +101,51 @@ header {
   align-items: center;
   background-color: lightyellow;
   opacity: 1;
+  box-shadow: 0 2px 10px grey;
   z-index: 999;
 }
 
-// logo
-.logo {
-  position: absolute;
-  left: 50%;
-  display: flex;
-  justify-content: center;
-  font-family: "Lobster", cursive;
-  font-size: 24px;
-  transform: translateX(-50%);
+// hamburger
+.hamburger {
+  width: 25px;
+  height: 3px;
+  position: relative;
+  left: 35px;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: rgb(218, 83, 35);
 
-  .website-title {
-    color: indianred;
-    text-shadow: 3px 3px 3px gray;
+  &::before,
+  &::after {
+    display: inline-block;
+    width: 25px;
+    height: 3.5px;
+    border-radius: 10px;
+    background-color: rgb(218, 83, 35);
+    content: "";
+  }
 
-    &:hover {
-      color: black;
+  &::before {
+    position: absolute;
+    bottom: 10px;
+  }
+
+  &::after {
+    position: absolute;
+    top: 10px;
+  }
+
+  // style for hamburger clicked
+  &.color-changed {
+    background-color: black;
+  }
+
+  &.color-changed {
+    &::before,
+    &::after {
+      background-color: black;
     }
   }
-}
-
-// cart
-#cart {
-  position: absolute;
-  right: 3rem;
-  font-size: 20px;
-  color: indianred;
 }
 
 // navbar
@@ -169,35 +187,32 @@ header {
   align-items: center;
 }
 
-// hamburger
-.hamburger {
-  width: 25px;
-  height: 3px;
-  position: relative;
-  left: 35px;
-  display: inline-block;
-  border-radius: 10px;
-  background-color: rgb(218, 83, 35);
+// logo
+.logo {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  font-family: "Lobster", cursive;
+  font-size: 24px;
+  transform: translateX(-50%);
 
-  &::before,
-  &::after {
-    display: inline-block;
-    width: 25px;
-    height: 3.5px;
-    border-radius: 10px;
-    background-color: rgb(218, 83, 35);
-    content: "";
-  }
+  .website-title {
+    color: indianred;
+    text-shadow: 3px 3px 3px gray;
 
-  &::before {
-    position: absolute;
-    bottom: 10px;
+    &:hover {
+      color: black;
+    }
   }
+}
 
-  &::after {
-    position: absolute;
-    top: 10px;
-  }
+// cart
+#cart {
+  position: absolute;
+  right: 3rem;
+  font-size: 20px;
+  color: indianred;
 }
 
 .main-content {
@@ -227,36 +242,37 @@ header {
     left: 50%;
     font-size: 24px;
   }
-
-  // button {
-  //   position: absolute;
-  //   top: 65%;
-  //   left: 60%;
-  //   background-color: white;
-  //   border-radius: 10px;
-  //   opacity: 0.7;
-
-  //   // &:hover {
-  //   //   opacity: 1;
-  //   // }
-  // }
 }
 
 //products
-.products {
+.products-panel {
   width: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  // margin-top: 30px;
+  overflow: auto;
+  font-family: "Oswald", sans-serif;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: rgb(247, 247, 174);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: indianred;
+    border-radius: 5px;
+  }
 
   .single-product {
     width: 450px;
+    height: 735px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: lightgrey 2px solid;
-    margin-top: 30px;
+    margin: 30px;
     padding: 15px;
 
     .product-name {
@@ -293,10 +309,16 @@ header {
       width: 45px;
       height: 45px;
       border-radius: 10px;
-      background-color: gold;
+      background-color: lightyellow;
       box-shadow: 2px 2px 2px grey;
       font-size: 24px;
       font-weight: 900;
+
+      // style for remove button
+      &.remove {
+        background-color: indianred;
+        font-size: 28px;
+      }
     }
   }
 }
@@ -312,12 +334,14 @@ header {
   background-image: url("images/homeplate-background-mobile.png");
   opacity: 0.7;
   color: white;
+  font-family: "Oswald", sans-serif;
 
   span {
     position: relative;
     top: 65%;
     left: 13%;
     font-size: 18px;
+    letter-spacing: 0.5px;
   }
 
   p {
@@ -326,13 +350,13 @@ header {
     top: 30%;
     left: 8%;
     color: rgb(236, 222, 15);
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 900;
+    letter-spacing: 0.5px;
   }
 }
 
-// service provided
-
+// services provided
 .services-provided {
   width: 100%;
   position: relative;
@@ -359,7 +383,7 @@ header {
     }
 
     .service-title {
-      font-family: "Shadows Into Light", cursive;
+      font-family: "Oswald", sans-serif;
       font-weight: 700;
     }
 
@@ -367,7 +391,7 @@ header {
       width: 150px;
       text-align: center;
       margin: 10px;
-      font-family: "Shadows Into Light", cursive;
+      font-family: "Oswald", sans-serif;
     }
   }
 }
@@ -381,17 +405,16 @@ header {
 .leave-a-message {
   width: 100%;
   position: relative;
-  top: 50px;
-  // border: 1px solid blue;
+  top: 70px;
   display: flex;
   flex-direction: column;
-
   align-items: flex-start;
-  background-image: url("images/grass-mobile.png");
-  background-repeat: no-repeat;
-  // background-size: 600px 450px;
-  color: white;
+  padding-bottom: 30px;
+  background-color: lightyellow;
+  color: black;
   opacity: 0.8;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 1.5px;
 
   span {
     margin: 1rem auto;
@@ -399,6 +422,9 @@ header {
   }
 
   .appellation {
+    width: 310px;
+    display: flex;
+    justify-content: center;
     margin: 10px auto;
 
     select {
@@ -411,9 +437,10 @@ header {
   .last-name,
   .email-address,
   .phone-number {
-    position: relative;
-    left: 80px;
-    margin: 10px 0 8px 0;
+    width: 345px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
 
     label {
       margin-right: 10px;
@@ -426,11 +453,11 @@ header {
   }
 
   .message-content {
+    width: 345px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    position: relative;
-    left: 80px;
-    margin: 10px 0 8px 0;
+    margin: 10px auto;
 
     label {
       margin: auto 10px auto 0;
@@ -442,24 +469,187 @@ header {
   select {
     border: none;
     border-radius: 12px;
-    background-color: rgba(144, 238, 144, 0.829);
+    background-color: lightgrey;
+    opacity: 0.9;
   }
 
   textarea {
     height: 160px;
     border: none;
     border-radius: 12px;
-    background-color: rgba(144, 238, 144, 0.829);
+    background-color: lightgrey;
+    opacity: 0.9;
   }
 }
 
 // footer
 footer {
   position: relative;
-  top: 125px;
+  top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: lightyellow;
   font-family: "Lobster", cursive;
+}
+
+// desktop style start
+
+@media screen and (min-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  // header
+  header {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(3fr, 600px) 1fr;
+  }
+
+  // hamburger
+  .navbar-toggle-label {
+    display: none;
+  }
+
+  // logo
+  .logo {
+    grid-column: 1/2;
+  }
+
+  // navbar
+  .navbar {
+    all: unset;
+    grid-column: 3/4;
+
+    .nav-list {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .main-content {
+    max-width: 100%;
+  }
+
+  // banner
+  .banner {
+    height: 500px;
+    background-image: url("images/baseball-background.png");
+    background-size: 100%;
+
+    span {
+      font-size: 30px;
+    }
+  }
+
+  // brand value
+  .brand-value {
+    height: 500px;
+    background-image: url("images/homeplate-background.png");
+    background-size: 100%;
+
+    span {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 24px;
+    }
+  }
+
+  // services-provided
+
+  .services-provided {
+    flex-direction: row;
+    height: 400px;
+
+    .service {
+      height: 250px;
+
+      &:hover {
+        transform: scale(1.08);
+        transition: 0.1s;
+      }
+    }
+  }
+
+  // customer stories
+  .customer-feedbacks {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url("images/grass.png");
+    background-size: 100%;
+
+    .content-title {
+      width: 90%;
+      height: 30px;
+      text-align: center;
+      margin: 30px 0 0 0;
+      color: white;
+      font-family: "Oswald", sans-serif;
+      font-size: 28px;
+    }
+
+    .feedback {
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border: lightyellow 3px solid;
+      border-radius: 10px;
+      color: indianred;
+      font-family: "Oswald", sans-serif;
+
+      .feedback-title {
+        margin: 15px auto;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 1px;
+      }
+
+      .feedback-content {
+        margin: 0 10px;
+      }
+
+      .customer-name {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  // leave a message
+  .leave-a-message {
+    .first-name,
+    .middle-name,
+    .last-name,
+    .email-address,
+    .phone-number {
+      width: 450px;
+
+      input {
+        width: 300px;
+      }
+    }
+
+    .message-content {
+      width: 450px;
+
+      textarea {
+        width: 300px;
+      }
+    }
+  }
+
+  // footer
+  footer {
+    position: relative;
+    top: 145px;
+  }
 }
