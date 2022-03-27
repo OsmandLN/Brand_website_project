@@ -15,11 +15,6 @@
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="index.html" class="website-title">BASEBALLsanity</a>
-      </div>
-      <!-- cart -->
-      <i class="fas fa-shopping-cart" id="cart"></i>
       <!-- hamburger -->
       <input type="checkbox" class="navbar-toggle" id="navbar-toggle" />
       <label for="navbar-toggle" class="navbar-toggle-label">
@@ -42,6 +37,12 @@
           </li>
         </ul>
       </navbar>
+      <!-- logo -->
+      <div class="logo">
+        <a href="index.html" class="website-title">BASEBALLsanity</a>
+      </div>
+      <!-- cart -->
+      <a href="#" id="cart"><i class="fas fa-shopping-cart"></i></a>
     </header>
     <section class="main-content">
       <!-- banner -->
@@ -51,34 +52,8 @@
       </div>
 
       <!-- products -->
-      <div class="products" id="products">
-        <div class="single-product">
-          <img src="images/baseball-cap-mobile.png" alt="baseball-cap" />
-          <span class="product-name">White baseball cap</span>
-          <span>Description:</span>
-          <i>White baseball cap made of anti-bacterial cloth, no mark on it.</i>
-          <span class="product-price">USD 20.00</span>
-          <button class="add-to-cart">+</button>
-        </div>
-        <div class="single-product">
-          <img src="images/baseball-glove-mobile.png" alt="baseball-glove" />
-          <span class="product-name">Catch&Throw handmade glove</span>
-          <span>Description:</span>
-          <i>
-            This kind of glove is made by experienced craftsman.And the surface
-            of the glove is coated by special material to prevent scratches.
-          </i>
-          <span class="product-price">USD 200.00</span>
-          <button class="add-to-cart">+</button>
-        </div>
-        <div class="single-product">
-          <img src="images/baseball-mobile.png" alt="baseball" />
-          <span class="product-name">Premium grade baseball(hard)</span>
-          <span>Description:</span>
-          <i>Hard core ball with high grade leather.</i>
-          <span class="product-price">USD 15.00</span>
-          <button class="add-to-cart">+</button>
-        </div>
+      <div class="products-panel" id="products-panel">
+        <!-- dynamically render the content -->
       </div>
       <!-- brand value -->
       <div class="brand-value" id="brand-value">
@@ -121,19 +96,20 @@
       </div>
       <!-- customer stories -->
       <div class="customer-feedbacks">
+        <p class="content-title">Customer stories</p>
         <div class="feedback">
           <span class="feedback-title">Good purchasing experience.</span>
           <p class="feedback-content">
             They offer not only good items but also complete packing.
           </p>
-          <span class="customer-name">Baker F. John</span>
+          <span class="customer-name">- Baker F. John</span>
         </div>
         <div class="feedback">
           <span class="feedback-title">Nice after-sales service.</span>
           <p class="feedback-content">
             They gave the appropriate reply and prompt support.
           </p>
-          <span class="customer-name">Hugh A. Hill</span>
+          <span class="customer-name">- Hugh A. Hill</span>
         </div>
       </div>
       <!-- leave a message -->
@@ -197,5 +173,6 @@
       src="https://kit.fontawesome.com/bdb5b5c4c3.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./index.js"></script>
   </body>
 </html>
