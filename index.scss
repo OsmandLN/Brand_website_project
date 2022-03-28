@@ -91,6 +91,11 @@ input:invalid {
 
 // mobile style start
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 // header
 header {
   max-width: 575px;
@@ -496,10 +501,6 @@ footer {
 // desktop style start
 
 @media screen and (min-width: 576px) {
-  body {
-    overflow-x: hidden;
-  }
-
   // header
   header {
     max-width: 100%;

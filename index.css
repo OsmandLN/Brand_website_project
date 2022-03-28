@@ -87,6 +87,11 @@ input:invalid {
   background: transparent;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 header {
   max-width: 575px;
   width: 100%;
@@ -575,9 +580,6 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
-  body {
-    overflow-x: hidden;
-  }
   header {
     max-width: 100%;
     display: -ms-grid;
