@@ -19,7 +19,7 @@ const products = [
   {
     id: 3,
     image: "images/baseball-mobile.png",
-    name: 'Premium grade baseball(hard)',
+    name: 'Premium grade baseball (hard)',
     description: 'Hard core ball with high grade leather.', price: '15.00'
   }]
 
