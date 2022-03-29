@@ -87,6 +87,11 @@ input:invalid {
   background: transparent;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 header {
   max-width: 575px;
   width: 100%;
@@ -434,6 +439,7 @@ header {
 }
 
 .services-provided .service .service-title {
+  text-align: center;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
 }
@@ -496,7 +502,7 @@ header {
 .leave-a-message .last-name,
 .leave-a-message .email-address,
 .leave-a-message .phone-number {
-  width: 345px;
+  width: 315px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,7 +530,7 @@ header {
 }
 
 .leave-a-message .message-content {
-  width: 345px;
+  width: 315px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,9 +581,6 @@ footer {
 }
 
 @media screen and (min-width: 576px) {
-  body {
-    overflow-x: hidden;
-  }
   header {
     max-width: 100%;
     display: -ms-grid;
@@ -592,6 +595,8 @@ footer {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
     grid-column: 1/2;
+    -webkit-transform: translateX(-15%);
+            transform: translateX(-15%);
   }
   .navbar {
     all: unset;
@@ -614,7 +619,7 @@ footer {
   .banner {
     height: 500px;
     background-image: url("images/baseball-background-smaller.png");
-    background-size: 100%;
+    background-size: cover;
   }
   .banner span {
     font-size: 30px;
@@ -622,7 +627,7 @@ footer {
   .brand-value {
     height: 500px;
     background-image: url("images/homeplate-background-smaller.png");
-    background-size: 100%;
+    background-size: cover;
   }
   .brand-value span {
     font-size: 28px;
@@ -660,7 +665,7 @@ footer {
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
     background-image: url("images/grass-smaller.png");
-    background-size: 100%;
+    background-size: cover;
   }
   .customer-feedbacks .content-title {
     width: 90%;
