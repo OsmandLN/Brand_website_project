@@ -168,6 +168,11 @@ header {
 
   .nav-link {
     color: indianred;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: 0.2s;
+    }
   }
 }
 
@@ -246,6 +251,7 @@ header {
     position: absolute;
     top: 40%;
     left: 50%;
+    color: white;
     font-size: 24px;
   }
 }
@@ -272,8 +278,8 @@ header {
   }
 
   .single-product {
-    width: 450px;
-    height: 735px;
+    width: 470px;
+    height: 560px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -283,13 +289,13 @@ header {
 
     .product-name {
       margin: 10px 0;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 700;
     }
 
     img {
-      width: 300px;
-      height: 420px;
+      width: 200px;
+      height: 250px;
       border-radius: 10px;
       transition: 0.5s;
 
@@ -303,6 +309,7 @@ header {
       width: 90%;
       text-align: center;
       margin: 10px;
+      font-size: 14px;
     }
 
     .product-price {
@@ -311,7 +318,7 @@ header {
 
     button {
       position: relative;
-      left: 120px;
+      left: 80px;
       width: 45px;
       height: 45px;
       border-radius: 10px;
@@ -346,6 +353,7 @@ header {
     position: relative;
     top: 65%;
     left: 13%;
+    color: black;
     font-size: 18px;
     letter-spacing: 0.5px;
   }
@@ -589,6 +597,7 @@ footer {
     justify-content: space-evenly;
     background-image: url("images/grass-smaller.png");
     background-size: cover;
+    opacity: 0.75;
 
     .content-title {
       width: 90%;
@@ -606,10 +615,12 @@ footer {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      border: lightyellow 3px solid;
+      border: orange 3px solid;
       border-radius: 10px;
       color: indianred;
+      background-color: lightgoldenrodyellow;
       font-family: "Oswald", sans-serif;
+      font-weight: 500;
 
       .feedback-title {
         margin: 15px auto;
