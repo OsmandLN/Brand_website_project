@@ -301,7 +301,7 @@ header {
 
 .products-panel .single-product {
   width: 470px;
-  height: 560px;
+  height: 600px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,8 +324,8 @@ header {
 }
 
 .products-panel .single-product img {
-  width: 200px;
-  height: 250px;
+  width: 210px;
+  height: 300px;
   border-radius: 10px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -634,6 +634,16 @@ footer {
   }
   .banner span {
     font-size: 30px;
+  }
+  .products-panel .single-product {
+    width: 550px;
+    height: 650px;
+  }
+  .products-panel .single-product .product-name {
+    font-size: 18px;
+  }
+  .products-panel .single-product i {
+    font-size: 16px;
   }
   .brand-value {
     height: 500px;

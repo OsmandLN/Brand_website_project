@@ -279,7 +279,7 @@ header {
 
   .single-product {
     width: 470px;
-    height: 560px;
+    height: 600px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -294,8 +294,8 @@ header {
     }
 
     img {
-      width: 200px;
-      height: 250px;
+      width: 210px;
+      height: 300px;
       border-radius: 10px;
       transition: 0.5s;
 
@@ -554,6 +554,22 @@ footer {
       font-size: 30px;
     }
   }
+
+  // products
+ .products-panel {
+   .single-product {
+     width:550px;
+     height:650px;
+     
+     .product-name {
+       font-size: 18px;
+     }
+
+     i {
+       font-size:16px
+     }
+   }
+ }
 
   // brand value
   .brand-value {
