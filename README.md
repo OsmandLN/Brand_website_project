@@ -13,6 +13,10 @@ building a baseball website page is an ideal way to practice must-have skills re
 - Javascript
 - RWD
 
+*Note:* 
+1. The breakpoint (min-width: 576 px) refers to Bootstrap documents.
+2. Although there is only one breakpoint setting (min-width: 576 px), the layout was also adjusted to fit the view size of tablets(min-width: 768 px). 
+
 *Users can -*
 
 - See the information of each product.
