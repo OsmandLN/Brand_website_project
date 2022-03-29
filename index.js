@@ -13,7 +13,7 @@ const products = [
     id: 2,
     image: "images/baseball-glove-mobile.png",
     name: 'Catch & Throw handmade glove',
-    description: 'This kind of glove is made by experienced craftsman.And the surface of the glove is coated by special material to prevent scratches.',
+    description: 'This kind of glove is made by experienced craftsman. And the surface of the glove is coated by special material to prevent scratches.',
     price: '200.00'
   },
   {
