@@ -62,6 +62,7 @@ button {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 button[disabled] {
