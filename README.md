@@ -1,5 +1,5 @@
 # Brand_website_project
-## This is an image-advertising website which is about baseball accessories store. ##
+## This is an brand website. ##
 
 ### Why this project? ###
 
