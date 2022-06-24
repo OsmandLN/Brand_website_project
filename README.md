@@ -14,7 +14,7 @@ building a baseball website page is an ideal way to practice must-have skills re
 - RWD
 
 *Note:* 
-1.Breakpoint: 376px/768px/1024px
+1.Breakpoint: 576px/768px/1024px
 
 
 *Users can -*
