@@ -395,7 +395,7 @@ header {
   position: absolute;
   border-radius: 5px;
   content: "";
-  background-image: url("/images/grass.jpg");
+  background-image: url("images/grass.jpg");
   background-position: center;
   -webkit-filter: blur(2px);
           filter: blur(2px);
@@ -407,7 +407,7 @@ header {
   position: absolute;
   border-radius: 5px;
   content: "";
-  background-image: url("/images/activities-mobile.jpg");
+  background-image: url("images/activities-mobile.jpg");
   background-position: center;
   -webkit-filter: blur(2px);
           filter: blur(2px);
@@ -419,7 +419,7 @@ header {
   position: absolute;
   border-radius: 5px;
   content: "";
-  background-image: url("/images/baseball-player-mobile.jpg");
+  background-image: url("images/baseball-player-mobile.jpg");
   background-position: center;
   -webkit-filter: blur(2px);
           filter: blur(2px);
@@ -452,7 +452,7 @@ header {
   position: absolute;
   border-radius: 5px;
   content: "";
-  background-image: url("/images/customer-stories-background.jpg");
+  background-image: url("images/customer-stories-background.jpg");
   background-position: center;
   background-size: cover;
   -webkit-filter: blur(2px);
