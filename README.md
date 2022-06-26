@@ -1,5 +1,5 @@
 # Brand_website_project
-## This is an image-advertising website which is about baseball accessories store. ##
+## This is an brand website. ##
 
 ### Why this project? ###
 
@@ -14,8 +14,8 @@ building a baseball website page is an ideal way to practice must-have skills re
 - RWD
 
 *Note:* 
-1. The breakpoint (min-width: 576 px) refers to Bootstrap documents.
-2. Although there is only one breakpoint setting (min-width: 576 px), the layout was also adjusted to fit the view size of tablets(min-width: 768 px). 
+1.Breakpoint: 576px/768px/1024px
+
 
 *Users can -*
 
