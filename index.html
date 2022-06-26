@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BASEBALLsanity</title>
+    <title>BASEBALLSANITY</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -24,13 +24,16 @@
       <navbar class="navbar">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav-link" href="#products-panel">Products</a>
+            <a class="nav-link" href="#brand-value">Brand Value</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#brand-value">Brand Value </a>
+            <a class="nav-link" href="#stadiums-rental">Stadiums Rental</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#services-provided">Services</a>
+            <a class="nav-link" href="#activities-held">Activities Held</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#players-agent">Players Agent</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#leave-a-message">Leave a message</a>
@@ -39,77 +42,78 @@
       </navbar>
       <!-- logo -->
       <div class="logo">
-        <a href="index.html" class="website-title">BASEBALLsanity</a>
+        <a href="index.html" class="baseball-icon"
+          ><i class="fas fa-baseball-ball"></i
+        ></a>
+        <a href="index.html" class="website-title">BASEBALLSANITY</a>
       </div>
-      <!-- cart -->
-      <a href="cart/cart.html" id="cart"><i class="fas fa-shopping-cart"></i></a>
     </header>
     <section class="main-content">
       <!-- banner -->
       <div class="banner">
         <span>We live for baseball.</span>
-        <!-- <button>Brand Value</button> -->
       </div>
 
-      <!-- products -->
-      <div class="products-panel" id="products-panel">
-        <!-- dynamically render the content -->
-      </div>
       <!-- brand value -->
       <div class="brand-value" id="brand-value">
         <span><strong>Professional.</strong></span>
         <span><strong>Passionate.</strong></span>
         <span><strong>Honest.</strong></span>
         <p>
-          <i>
-            Started in 2022, we believe that brilliance is made of every little
-            piece of effort, and success is generated from every listening and
-            caring. We are -
-          </i>
+          Started in 2022, we believe that brilliance is made of every little
+          piece of effort, and success is generated from every listening and
+          caring. We are -
         </p>
       </div>
+
       <!-- services provided -->
       <div class="services-provided" id="services-provided">
-        <div class="service">
-          <i class="fas fa-hammer"></i>
-          <span class="service-title">Repair the glove.</span>
-          <p class="service-description">
-            Repolish the surface for the glove, change the inner cloth or the
-            rope.
-          </p>
-        </div>
-        <div class="service">
-          <i class="fas fa-shopping-basket"></i>
-          <span class="service-title"
-            >Purchasing agent for the accessories.</span
-          >
-          <p class="service-description">
-            Purchase the accessories from certain brand which commissioned by
-            customer.
-          </p>
-        </div>
-        <div class="service">
-          <i class="fas fa-signature"></i>
-          <span class="service-title">Customize personal accessories.</span>
-          <p class="service-description">Customized design is available.</p>
+        <span class="what-we-offer-title">What we offer</span>
+        <div class="services-wrapper">
+          <div class="service" id="stadiums-rental">
+            <i class="fas fa-book-open"></i>
+            <span class="service-title">Stadiums Rental.</span>
+            <p class="service-description">
+              Assist the customers to rent the stadiums or practice spaces.
+            </p>
+          </div>
+          <div class="service" id="holding-activities">
+            <i class="fas fa-microphone"></i>
+            <span class="service-title">Holding activities.</span>
+            <p class="service-description">
+              Assist the clients to hold the activities, and help the clients
+              prepare for the event.
+            </p>
+          </div>
+          <div class="service" id="players-agent">
+            <i class="fas fa-signature"></i>
+            <span class="service-title">Players agent.</span>
+            <p class="service-description">
+              Assist the players to finish signing and negotiating of the
+              contracts.
+            </p>
+          </div>
         </div>
       </div>
+
       <!-- customer stories -->
       <div class="customer-feedbacks">
-        <p class="content-title">Customer stories</p>
-        <div class="feedback">
-          <span class="feedback-title">Good purchasing experience.</span>
-          <p class="feedback-content">
-            They offer not only good items but also complete packing.
-          </p>
-          <span class="customer-name">- Baker F. John</span>
-        </div>
-        <div class="feedback">
-          <span class="feedback-title">Nice after-sales service.</span>
-          <p class="feedback-content">
-            They gave the appropriate reply and prompt support.
-          </p>
-          <span class="customer-name">- Hugh A. Hill</span>
+        <span class="content-title">Customer stories</span>
+        <div class="feedbacks-wrapper">
+          <div class="feedback">
+            <span class="feedback-title">Good cooperating experience.</span>
+            <p class="feedback-content">
+              They offer not only good service but also appropriate quotation.
+            </p>
+            <span class="customer-name">- Baker F. John</span>
+          </div>
+          <div class="feedback">
+            <span class="feedback-title">Nice service.</span>
+            <p class="feedback-content">
+              They gave the appropriate reply and prompt support.
+            </p>
+            <span class="customer-name">- Hugh A. Hill</span>
+          </div>
         </div>
       </div>
       <!-- leave a message -->
