@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "category": "Baseball games",
+      "image1": "../images/baseball_games/baseball-game-1.png",
+      "image2": "../images/baseball_games/baseball-game-2.png",
+      "image3": "../images/baseball_games/baseball-game-3.png",
+      "image4": "../images/baseball_games/baseball-game-4.png",
+      "image5": "../images/baseball_games/baseball-game-5.png",
+      "image6": "../images/baseball_games/baseball-game-6.png"
+    },
+    {
+      "category": "Marathons",
+      "image1": "../images/marathons/marathon-1.png",
+      "image2": "../images/marathons/marathon-2.png",
+      "image3": "../images/marathons/marathon-3.png",
+      "image4": "../images/marathons/marathon-4.png",
+      "image5": "../images/marathons/marathon-5.png",
+      "image6": "../images/marathons/marathon-6.png"
+    }
+  ]
+}
