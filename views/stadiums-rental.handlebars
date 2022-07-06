@@ -1,0 +1,19 @@
+<div class="stadiums-rental-template" id="stadiums-rental-template">
+  <span class="stadiums-we-have-title">Stadiums We Offer</span>
+  <div class="stadiums-wrapper">
+    {{#each stadiums}}
+      <div class="stadium">
+        <img src="{{this.image}}" alt="stadium-image" />
+        <span class="stadium-name">Stadium: {{this.name}}</span>
+        <div class="stadium-description">
+          <span class="stadium-type">Type: {{this.type}}</span>
+          <span class="stadium-area">Area: {{this.area}} (square meter)</span>
+          <span class="fee">Fee: $ {{this.fee}} /day</span>
+        </div>
+        <button class="book-now-btn"><a
+            href="http://localhost:3000/#leave-a-message"
+          >Book now</a></button>
+      </div>
+    {{/each}}
+  </div>
+</div>
