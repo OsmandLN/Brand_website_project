@@ -1,0 +1,52 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "image": "./images/grass.png",
+      "name": "A",
+      "type": "grass",
+      "area": "500",
+      "fee": "500"
+    },
+    {
+      "id": 2,
+      "image": "./images/clay-stadium.png",
+      "name": "B",
+      "type": "clay",
+      "area": "700",
+      "fee": "700"
+    },
+    {
+      "id": 3,
+      "image": "./images/mixed-stadium.png",
+      "name": "C",
+      "type": "mixed",
+      "area": "1500",
+      "fee": "1,500"
+    },
+    {
+      "id": 4,
+      "image": "./images/grass.png",
+      "name": "D",
+      "type": "grass",
+      "area": "800",
+      "fee": "800"
+    },
+    {
+      "id": 5,
+      "image": "./images/clay-stadium.png",
+      "name": "E",
+      "type": "clay",
+      "area": "1000",
+      "fee": "1,000"
+    },
+    {
+      "id": 6,
+      "image": "./images/mixed-stadium.png",
+      "name": "F",
+      "type": "mixed",
+      "area": "2000",
+      "fee": "2,000"
+    }
+  ]
+}
