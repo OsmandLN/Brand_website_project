@@ -1,0 +1,25 @@
+{
+  "name": "brand_website_layout_side-project",
+  "version": "1.0.0",
+  "description": "*As a frontend developer who loves baseball a lot,\r building a baseball website page is an ideal way to practice must-have skills related to frontend field.*",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OsmandLN/Brand_website_project.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OsmandLN/Brand_website_project/issues"
+  },
+  "homepage": "https://github.com/OsmandLN/Brand_website_project#readme",
+  "keywords": []
+}
