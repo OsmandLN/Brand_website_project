@@ -1,0 +1,432 @@
+// reset Scss
+@import 'reset.scss';
+@include resetScss;
+
+// import font styles
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+$main-color: lightyellow;
+$sub-color: indianred;
+$font-color: black;
+$main-font: "Oswald", sans-serif;
+
+// main content
+.main-content {
+  width: 100%;
+  position: relative;
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// banner
+.banner {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  background-image: url("/images/baseball-background-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  opacity: 0.7;
+  font-family: $main-font;
+
+  span {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: $main-color;
+    font-size: 24px;
+  }
+}
+
+// brand value
+.brand-value {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-color;
+  font-family: $main-font;
+
+  p {
+    width: 70%;
+    position: absolute;
+    top: 10%;
+    text-align: center;
+    margin: 0 auto;
+    color: $sub-color;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    transform: translateX(-1500px);
+    transition: 0s;
+  }
+
+  span {
+    position: relative;
+    top: 40%;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 10px 0;
+    background-color: rgba($sub-color, $alpha: 0.2);
+    color: $font-color;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    transform: translateX(-1500px);
+    transition: 0s;
+  }
+
+  &.slide-in {
+    p {
+      transform: translateX(0px);
+      transition: 0.5s;
+    }
+
+    span {
+      transform: translateX(0px);
+      transition: 0.7s;
+    }
+  }
+}
+
+// services provided
+.services-provided {
+  width: 90%;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+
+  .what-we-offer-title {
+    font-family: $main-font;
+    font-size: 24px;
+    color: $font-color;
+    border-bottom: $font-color 3px solid;
+  }
+
+  .services-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .service {
+      width: 80%;
+      height: 300px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 25px;
+      background-position: center;
+      background-size: cover;
+
+      i {
+        margin: 1rem 0;
+        font-size: 50px;
+        color: $main-color;
+        z-index: 5;
+      }
+
+      .service-title {
+        text-align: center;
+        font-family: $main-font;
+        font-weight: 700;
+        color: $main-color;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        z-index: 5;
+      }
+
+      .service-description {
+        width: 150px;
+        text-align: center;
+        margin: 10px;
+        font-family: $main-font;
+        color: $main-color;
+        letter-spacing: 1px;
+        border-radius: 3px;
+        z-index: 5;
+      }
+    }
+  }
+
+  #stadiums-rental {
+    &::before {
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      border-radius: 5px;
+      content: "";
+      background-image: url("/images/grass.png");
+      background-position: center;
+      filter: blur(2px);
+    }
+  }
+
+  #holding-activities {
+    &::before {
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      border-radius: 5px;
+      content: "";
+      background-image: url("/images/activities-mobile.png");
+      background-position: center;
+      filter: blur(2px);
+    }
+  }
+
+  #players-agent {
+    &::before {
+      width: 100%;
+      height: 300px;
+      position: absolute;
+      border-radius: 5px;
+      content: "";
+      background-image: url("/images/baseball-player-mobile.png");
+      background-position: center;
+      filter: blur(2px);
+    }
+  }
+}
+
+// customer stories
+.customer-feedbacks {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: $main-font;
+  letter-spacing: 1px;
+
+  &::before {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    border-radius: 5px;
+    content: "";
+    background-image: url("/images/customer-stories-background.png");
+    background-position: center;
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1
+  }
+
+  .content-title {
+    text-align: center;
+    border-bottom: $main-color 3px solid;
+    margin: 25px;
+    font-size: 24px;
+    color: $main-color;
+    z-index: 5;
+  }
+
+  .feedback {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: $main-color 3px solid;
+    border-radius: 5px;
+    margin: 25px;
+    color: $main-color;
+    z-index: 5;
+
+    .feedback-title {
+      text-align: center;
+    }
+
+    .feedback-content {
+      text-align: center;
+    }
+
+    .customer-name {
+      text-align: center;
+    }
+  }
+}
+
+// leave a message
+.leave-a-message {
+  width: 100%;
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 30px;
+  background-color: $main-color;
+  color: $font-color;
+  opacity: 0.8;
+  font-family: $main-font;
+  letter-spacing: 1px;
+
+  span {
+    margin: 1rem auto;
+    font-size: 20px;
+  }
+
+  .appellation {
+    width: 310px;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+
+    select {
+      padding: 2px 5px;
+    }
+  }
+
+  .first-name,
+  .middle-name,
+  .last-name,
+  .email-address,
+  .phone-number {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+
+    label {
+      margin-right: 10px;
+      font-weight: 900;
+    }
+
+    input {
+      padding: 2px;
+    }
+  }
+
+  .message-content {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px auto;
+
+    label {
+      margin: auto 10px auto 0;
+      font-weight: 900;
+    }
+  }
+
+  input,
+  select {
+    width: 50%;
+    border: none;
+    border-radius: 12px;
+    background-color: $sub-color;
+    opacity: 0.9;
+  }
+
+  textarea {
+    width: 50%;
+    height: 160px;
+    border: none;
+    border-radius: 12px;
+    background-color: $sub-color;
+    opacity: 0.9;
+  }
+}
+
+
+
+@media screen and (min-width: 576px) {
+
+  // brand value
+  .brand-value {
+    p {
+      font-size: 20px;
+    }
+
+    span {
+      font-size: 24px;
+    }
+  }
+
+  // services-provided
+  .services-provided {
+    .what-we-offer-title {
+      font-size: 28px;
+    }
+
+    .service-title {
+      font-size: 18px;
+    }
+
+    .service-description {
+      font-size: 18px;
+    }
+  }
+
+  // customer stories
+  .customer-feedbacks {
+    .content-title {
+      font-size: 28px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .leave-a-message {
+
+    .first-name,
+    .middle-name,
+    .last-name,
+    .email-address,
+    .phone-number {
+      width: 60%;
+
+      label {
+        font-size: 18px;
+      }
+    }
+
+    .message-content {
+      width: 60%;
+
+      label {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .services-provided {
+    margin-bottom: 50px;
+
+    .services-wrapper {
+      flex-direction: row;
+
+      .service {
+        width: 30%;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+
+  .customer-feedbacks {
+    height: 400px;
+
+    .feedbacks-wrapper {
+      display: flex;
+    }
+  }
+}
