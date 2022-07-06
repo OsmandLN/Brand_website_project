@@ -1,0 +1,36 @@
+<div class="activities-held-template" id="activities-held-template">
+  <span class="activities-held-by-us-title">Activities held by us</span>
+  <div class="activities-wrapper">
+    {{#each activities}}
+      <div class="activity">
+        <span class="activity-category">{{this.category}}</span>
+        <div class="activity-images-wrapper">
+          <div class="image"><img
+              src="{{this.image1}}"
+              alt="activity-image1"
+            /></div>
+          <div class="image"><img
+              src="{{this.image2}}"
+              alt="activity-image2"
+            /></div>
+          <div class="image"><img
+              src="{{this.image3}}"
+              alt="activity-image3"
+            /></div>
+          <div class="image"><img
+              src="{{this.image4}}"
+              alt="activity-image4"
+            /></div>
+          <div class="image"><img
+              src="{{this.image5}}"
+              alt="activity-image5"
+            /></div>
+          <div class="image"><img
+              src="{{this.image6}}"
+              alt="activity-image6"
+            /></div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>
