@@ -1,0 +1,34 @@
+{
+  "results": [
+    {
+      "id": 1,
+      "item": "Ball games agent",
+      "description": "Assist players in participating international competitions."
+    },
+    {
+      "id": 2,
+      "item": "Endorsements and invitations",
+      "description": "Help players process the endorsements and invitations."
+    },
+    {
+      "id": 3,
+      "item": "Contract negotiation",
+      "description": "Assist players in signing contracts and negotiating with the teams."
+    },
+    {
+      "id": 4,
+      "item": "Personal brand building",
+      "description": "Help players build their own personal brands."
+    },
+    {
+      "id": 5,
+      "item": "Legal service",
+      "description": "Assist players in handling legal issues with good legal consultants. "
+    },
+    {
+      "id": 6,
+      "item": "Public relationship",
+      "description": "Help players handle public relationship with experienced experts."
+    }
+  ]
+}
