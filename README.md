@@ -1,34 +1,24 @@
 # Brand_website_project
-## This is an brand website. ##
 
-### Why this project? ###
+### Why this project?
 
-*As a frontend developer who loves baseball a lot,
-building a baseball website page is an ideal way to practice must-have skills related to frontend field.*
+_As a frontend developer who loves baseball a lot,
+building a baseball agent website page is an ideal way to sharpen must-have skills related to frontend field._
 
-### Skills used in this project: ###
+### Skills used in this project:
 
 - HTML
 - CSS(SCSS)
 - Javascript
+- Express.js
 - RWD
 
-*Note:* 
+_Note:_
 1.Breakpoint: 576px/768px/1024px
 
+### How to start the project:
 
-*Users can -*
-
-- See the information of each product.
-- See the brand value of this brand.
-- See the services provided.
-- Read the customers' stories.
-- Leave a message through the form at the bottom of this website page.
-- Click each nav-link to move to each corresponding part.
-
-### How to start the project: ###
-
-1. Clone the project.  
+1. Clone the project.
 
    `git clone project_URL`
 
@@ -36,14 +26,16 @@ building a baseball website page is an ideal way to practice must-have skills re
 
    `cd Brand_website_project/`
 
-3. Open the folder by VScode. 
+3. Open the folder by VScode.
 
    `code .` (Please remember to add a space between . and the word "code")
-   
-4. Choose **index.html**.
-5. Click *Go Live*.
-6. Enjoy the website!   
 
-### Contributors ###
+4. Choose **index.html**.
+5. Click _Go Live_.
+6. Enjoy the website!
+
+### Contributors
+
 ---
+
 OsmandLN
