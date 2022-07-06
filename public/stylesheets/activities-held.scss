@@ -1,0 +1,123 @@
+// reset Scss
+@import 'reset.scss';
+@include resetScss;
+
+// import font styles
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+$main-color: lightyellow;
+$sub-color: indianred;
+$font-color: black;
+$main-font: "Oswald", sans-serif;
+
+// template
+#activities-held-template {
+  width: 100%;
+  height: 3000px;
+  position: relative;
+  top: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-color;
+  font-family: $main-font;
+
+  .activities-held-by-us-title {
+    position: relative;
+    top: 50px;
+    color: $sub-color;
+    font-size: 20px;
+  }
+
+  .activities-wrapper {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .activity {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px 0;
+
+      .activity-category {
+        padding: 0 5px;
+        border: $font-color 3px dashed;
+        border-radius: 3px;
+        margin: 10px 0;
+        font-size: 18px;
+      }
+
+      .activity-images-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+
+        .image {
+          width: 100%;
+          border-radius: 10px;
+          margin: 10px 0;
+          overflow: hidden;
+
+          img {
+            height: 200px;
+            object-fit: cover;
+            transform: scale(1);
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #activities-held-template {
+    height: 1700px;
+
+    .activities-wrapper {
+      .activity {
+        .activity-images-wrapper {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          .image {
+            width: 45%;
+            margin: 15px
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #activities-held-template {
+    height: 1200px;
+
+    .activities-wrapper {
+      .activity {
+        .activity-images-wrapper {
+
+
+          .image {
+            width: 30%;
+
+            img {
+              &:hover {
+                transform: scale(1.1);
+                transition: transform 0.3s ease-in
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
