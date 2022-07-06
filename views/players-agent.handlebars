@@ -1,0 +1,11 @@
+<div class="players-agent-template" id="players-agent-template">
+  <span class="agent-items-we-offer-title">Agent items we offer</span>
+  <div class="agent-items-wrapper">
+    {{#each items}}
+      <div class="agent-item">
+        <span class="item-title">{{this.item}}</span>
+        <p class="item-description">{{this.description}}</p>
+      </div>
+    {{/each}}
+  </div>
+</div>
