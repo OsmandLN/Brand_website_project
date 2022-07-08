@@ -28,6 +28,7 @@ header {
   background-color: $main-color;
   box-shadow: 0 2px 10px grey;
   z-index: 999;
+  font-family: $main-font;
 }
 
 // hamburger
@@ -87,7 +88,7 @@ header {
   transition: transform 0.3s ease-out;
 
   .nav-link {
-    font-size: 14px;
+    font-size: 18px;
     color: $sub-color;
   }
 }

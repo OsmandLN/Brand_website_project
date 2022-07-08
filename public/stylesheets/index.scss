@@ -30,7 +30,7 @@ $main-font: "Oswald", sans-serif;
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  opacity: 0.7;
+  // opacity: 0.7;
   font-family: $main-font;
 
   span {
@@ -61,22 +61,23 @@ $main-font: "Oswald", sans-serif;
     margin: 0 auto;
     color: $sub-color;
     font-size: 16px;
-    font-weight: 900;
     letter-spacing: 0.5px;
     transform: translateX(-1500px);
     transition: 0s;
   }
 
   span {
+    width: 35%;
     position: relative;
     top: 40%;
     padding: 5px;
     border-radius: 5px;
     margin: 10px 0;
-    background-color: rgba($sub-color, $alpha: 0.2);
+    background-color: rgba($sub-color, $alpha: 0.1);
     color: $font-color;
     font-size: 20px;
     letter-spacing: 0.5px;
+    text-align: center;
     transform: translateX(-1500px);
     transition: 0s;
   }
@@ -353,6 +354,7 @@ $main-font: "Oswald", sans-serif;
     }
 
     span {
+      width: 30%;
       font-size: 24px;
     }
   }
@@ -406,6 +408,17 @@ $main-font: "Oswald", sans-serif;
 }
 
 @media screen and (min-width: 1024px) {
+  .banner {
+    background-image: url('/images/baseball-background-bigger.png');
+  }
+
+  .brand-value {
+
+    span {
+      width: 20%;
+    }
+  }
+
   .services-provided {
     margin-bottom: 50px;
 
