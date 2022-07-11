@@ -24,15 +24,17 @@ _Note:_
 
 2. Enter the project folder.
 
-   `cd Brand_website_project/`
+   `cd Brand_website_project`
 
-3. Open the folder by VScode.
+3. Install the packages and dependencies.
 
-   `code .` (Please remember to add a space between . and the word "code")
+   `npm install`
+   
+4. Turn on the server.
 
-4. Choose **index.html**.
-5. Click _Go Live_.
-6. Enjoy the website!
+   `nodemon app.js`
+   
+5. Go to localhost:3000 and enjoy the website!
 
 ### Contributors
 
