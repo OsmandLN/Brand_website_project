@@ -11,10 +11,7 @@ building a baseball agent website page is an ideal way to sharpen must-have skil
 - CSS(SCSS)
 - Javascript
 - Express.js
-- RWD
-
-_Note:_
-1.Breakpoint: 576px/768px/1024px
+- RWD(Breakpoint: 576px/768px/1024px)
 
 ### How to start the project:
 
@@ -35,6 +32,10 @@ _Note:_
    `nodemon app.js`
    
 5. Go to localhost:3000 and enjoy the website!
+
+_Note:_
+
+1. All images used in this project are from Unsplash.
 
 ### Contributors
 
