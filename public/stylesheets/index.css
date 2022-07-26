@@ -11,8 +11,7 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -73,13 +72,11 @@ input {
 }
 
 input:required {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 input:invalid {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 ::-webkit-scrollbar {
@@ -91,16 +88,9 @@ input:invalid {
   width: 100%;
   position: relative;
   top: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .banner {
@@ -114,7 +104,6 @@ input:invalid {
   overflow: hidden;
   font-family: "Oswald", sans-serif;
 }
-
 .banner span {
   position: absolute;
   top: 40%;
@@ -127,20 +116,12 @@ input:invalid {
   width: 100%;
   height: 350px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: lightyellow;
   font-family: "Oswald", sans-serif;
 }
-
 .brand-value p {
   width: 70%;
   position: absolute;
@@ -150,12 +131,9 @@ input:invalid {
   color: indianred;
   font-size: 16px;
   letter-spacing: 0.5px;
-  -webkit-transform: translateX(-1500px);
-          transform: translateX(-1500px);
-  -webkit-transition: 0s;
+  transform: translateX(-1500px);
   transition: 0s;
 }
-
 .brand-value span {
   width: 35%;
   position: relative;
@@ -168,23 +146,15 @@ input:invalid {
   font-size: 20px;
   letter-spacing: 0.5px;
   text-align: center;
-  -webkit-transform: translateX(-1500px);
-          transform: translateX(-1500px);
-  -webkit-transition: 0s;
+  transform: translateX(-1500px);
   transition: 0s;
 }
-
 .brand-value.slide-in p {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: 0.5s;
+  transform: translateX(0px);
   transition: 0.5s;
 }
-
 .brand-value.slide-in span {
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-  -webkit-transition: 0.7s;
+  transform: translateX(0px);
   transition: 0.7s;
 }
 
@@ -192,69 +162,41 @@ input:invalid {
   width: 90%;
   position: relative;
   top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 20px;
 }
-
 .services-provided .what-we-offer-title {
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   color: black;
   border-bottom: black 3px solid;
 }
-
 .services-provided .services-wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 .services-provided .services-wrapper .service {
   width: 80%;
   height: 300px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 25px;
   background-position: center;
   background-size: cover;
 }
-
 .services-provided .services-wrapper .service i {
   margin: 1rem 0;
   font-size: 50px;
   color: lightyellow;
   z-index: 5;
 }
-
 .services-provided .services-wrapper .service .service-title {
   text-align: center;
   font-family: "Oswald", sans-serif;
@@ -264,7 +206,6 @@ input:invalid {
   border-radius: 3px;
   z-index: 5;
 }
-
 .services-provided .services-wrapper .service .service-description {
   width: 150px;
   text-align: center;
@@ -275,7 +216,6 @@ input:invalid {
   border-radius: 3px;
   z-index: 5;
 }
-
 .services-provided #stadiums-rental::before {
   width: 100%;
   height: 300px;
@@ -284,10 +224,8 @@ input:invalid {
   content: "";
   background-image: url("/images/grass.png");
   background-position: center;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
-
 .services-provided #holding-activities::before {
   width: 100%;
   height: 300px;
@@ -296,10 +234,8 @@ input:invalid {
   content: "";
   background-image: url("/images/activities-mobile.png");
   background-position: center;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
-
 .services-provided #players-agent::before {
   width: 100%;
   height: 300px;
@@ -308,8 +244,7 @@ input:invalid {
   content: "";
   background-image: url("/images/baseball-player-mobile.png");
   background-position: center;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
 }
 
 .customer-feedbacks {
@@ -317,23 +252,13 @@ input:invalid {
   height: 450px;
   position: relative;
   top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
-
 .customer-feedbacks::before {
   width: 100%;
   height: 450px;
@@ -343,11 +268,9 @@ input:invalid {
   background-image: url("/images/customer-stories-background.png");
   background-position: center;
   background-size: cover;
-  -webkit-filter: blur(2px);
-          filter: blur(2px);
+  filter: blur(2px);
   z-index: -1;
 }
-
 .customer-feedbacks .content-title {
   text-align: center;
   border-bottom: lightyellow 3px solid;
@@ -356,34 +279,23 @@ input:invalid {
   color: lightyellow;
   z-index: 5;
 }
-
 .customer-feedbacks .feedback {
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   border: lightyellow 3px solid;
   border-radius: 5px;
   margin: 25px;
   color: lightyellow;
   z-index: 5;
 }
-
 .customer-feedbacks .feedback .feedback-title {
   text-align: center;
 }
-
 .customer-feedbacks .feedback .feedback-content {
   text-align: center;
 }
-
 .customer-feedbacks .feedback .customer-name {
   text-align: center;
 }
@@ -392,16 +304,9 @@ input:invalid {
   width: 100%;
   position: relative;
   top: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
   padding-bottom: 30px;
   background-color: lightyellow;
   color: black;
@@ -409,42 +314,29 @@ input:invalid {
   font-family: "Oswald", sans-serif;
   letter-spacing: 1px;
 }
-
 .leave-a-message span {
   margin: 1rem auto;
   font-size: 20px;
 }
-
 .leave-a-message .appellation {
   width: 310px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 10px auto;
 }
-
 .leave-a-message .appellation select {
   padding: 2px 5px;
 }
-
 .leave-a-message .first-name,
 .leave-a-message .middle-name,
 .leave-a-message .last-name,
 .leave-a-message .email-address,
 .leave-a-message .phone-number {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 10px auto;
 }
-
 .leave-a-message .first-name label,
 .leave-a-message .middle-name label,
 .leave-a-message .last-name label,
@@ -453,7 +345,6 @@ input:invalid {
   margin-right: 10px;
   font-weight: 900;
 }
-
 .leave-a-message .first-name input,
 .leave-a-message .middle-name input,
 .leave-a-message .last-name input,
@@ -461,26 +352,23 @@ input:invalid {
 .leave-a-message .phone-number input {
   padding: 2px;
 }
-
 .leave-a-message .message-content {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   margin: 10px auto;
 }
-
 .leave-a-message .message-content label {
   margin: auto 10px auto 0;
   font-weight: 900;
 }
-
+.leave-a-message .submit-btn {
+  border: black 2px solid;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-size: 18px;
+}
 .leave-a-message input,
 .leave-a-message select {
   width: 50%;
@@ -489,7 +377,6 @@ input:invalid {
   background-color: indianred;
   opacity: 0.9;
 }
-
 .leave-a-message textarea {
   width: 50%;
   height: 160px;
@@ -520,20 +407,19 @@ input:invalid {
     font-size: 28px;
   }
 }
-
 @media screen and (min-width: 768px) {
   .leave-a-message .first-name,
-  .leave-a-message .middle-name,
-  .leave-a-message .last-name,
-  .leave-a-message .email-address,
-  .leave-a-message .phone-number {
+.leave-a-message .middle-name,
+.leave-a-message .last-name,
+.leave-a-message .email-address,
+.leave-a-message .phone-number {
     width: 60%;
   }
   .leave-a-message .first-name label,
-  .leave-a-message .middle-name label,
-  .leave-a-message .last-name label,
-  .leave-a-message .email-address label,
-  .leave-a-message .phone-number label {
+.leave-a-message .middle-name label,
+.leave-a-message .last-name label,
+.leave-a-message .email-address label,
+.leave-a-message .phone-number label {
     font-size: 18px;
   }
   .leave-a-message .message-content {
@@ -543,7 +429,6 @@ input:invalid {
     font-size: 18px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   .banner {
     background-image: url("/images/baseball-background-bigger.png");
@@ -555,25 +440,29 @@ input:invalid {
     margin-bottom: 50px;
   }
   .services-provided .services-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .services-provided .services-wrapper .service {
     width: 30%;
   }
   .services-provided .services-wrapper .service:hover {
-    -webkit-transform: scale(1.05);
-            transform: scale(1.05);
+    transform: scale(1.05);
   }
   .customer-feedbacks {
     height: 400px;
   }
   .customer-feedbacks .feedbacks-wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
-}
-/*# sourceMappingURL=index.css.map */
+  .leave-a-message .first-name,
+.leave-a-message .middle-name,
+.leave-a-message .last-name,
+.leave-a-message .email-address,
+.leave-a-message .phone-number,
+.leave-a-message .message-content {
+    width: 40%;
+  }
+  .leave-a-message .submit-btn:hover {
+    background-color: indianred;
+  }
+}/*# sourceMappingURL=index.css.map */

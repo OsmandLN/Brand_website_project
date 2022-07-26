@@ -267,7 +267,7 @@ $main-font: "Oswald", sans-serif;
   top: 100px;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding-bottom: 30px;
   background-color: $main-color;
   color: $font-color;
@@ -322,6 +322,13 @@ $main-font: "Oswald", sans-serif;
       margin: auto 10px auto 0;
       font-weight: 900;
     }
+  }
+
+  .submit-btn {
+    border: $font-color 2px solid;
+    border-radius: 5px;
+    margin: 20px 0;
+    font-size: 18px;
   }
 
   input,
@@ -440,6 +447,24 @@ $main-font: "Oswald", sans-serif;
 
     .feedbacks-wrapper {
       display: flex;
+    }
+  }
+
+  .leave-a-message {
+
+    .first-name,
+    .middle-name,
+    .last-name,
+    .email-address,
+    .phone-number,
+    .message-content {
+      width: 40%
+    }
+
+    .submit-btn {
+      &:hover {
+        background-color: $sub-color;
+      }
     }
   }
 }
