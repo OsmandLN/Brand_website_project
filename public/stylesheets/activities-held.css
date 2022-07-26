@@ -11,8 +11,7 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -73,13 +72,11 @@ input {
 }
 
 input:required {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 input:invalid {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 ::-webkit-scrollbar {
@@ -92,58 +89,33 @@ input:invalid {
   height: 3000px;
   position: relative;
   top: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   background-color: lightyellow;
   font-family: "Oswald", sans-serif;
 }
-
 #activities-held-template .activities-held-by-us-title {
   position: relative;
   top: 50px;
   color: indianred;
   font-size: 20px;
 }
-
 #activities-held-template .activities-wrapper {
   width: 100%;
   position: relative;
   top: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 #activities-held-template .activities-wrapper .activity {
   width: 90%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   margin: 15px 0;
 }
-
 #activities-held-template .activities-wrapper .activity .activity-category {
   padding: 0 5px;
   border: black 3px dashed;
@@ -151,29 +123,22 @@ input:invalid {
   margin: 10px 0;
   font-size: 18px;
 }
-
 #activities-held-template .activities-wrapper .activity .activity-images-wrapper {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 #activities-held-template .activities-wrapper .activity .activity-images-wrapper .image {
   width: 100%;
   border-radius: 10px;
   margin: 10px 0;
   overflow: hidden;
 }
-
 #activities-held-template .activities-wrapper .activity .activity-images-wrapper .image img {
   height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 @media screen and (min-width: 768px) {
@@ -181,22 +146,15 @@ input:invalid {
     height: 1700px;
   }
   #activities-held-template .activities-wrapper .activity .activity-images-wrapper {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   #activities-held-template .activities-wrapper .activity .activity-images-wrapper .image {
     width: 45%;
     margin: 15px;
   }
 }
-
 @media screen and (min-width: 1024px) {
   #activities-held-template {
     height: 1200px;
@@ -205,12 +163,7 @@ input:invalid {
     width: 30%;
   }
   #activities-held-template .activities-wrapper .activity .activity-images-wrapper .image img:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-    -webkit-transition: -webkit-transform 0.3s ease-in;
-    transition: -webkit-transform 0.3s ease-in;
+    transform: scale(1.1);
     transition: transform 0.3s ease-in;
-    transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
   }
-}
-/*# sourceMappingURL=activities-held.css.map */
+}/*# sourceMappingURL=activities-held.css.map */
