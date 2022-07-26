@@ -11,8 +11,7 @@ body {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1,
@@ -73,13 +72,11 @@ input {
 }
 
 input:required {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 input:invalid {
-  -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 ::-webkit-scrollbar {
@@ -92,19 +89,11 @@ input:invalid {
   height: 1200px;
   position: relative;
   top: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   font-family: "Oswald", sans-serif;
 }
-
 #players-agent-template::before {
   width: 100%;
   height: 100%;
@@ -113,65 +102,44 @@ input:invalid {
   background-image: url("/images/players-agent-bg.png");
   background-position: 40% 25%;
   background-size: cover;
+  background-attachment: fixed;
   z-index: -1;
-  -webkit-filter: blur(3px);
-          filter: blur(3px);
+  filter: blur(2px);
 }
-
 #players-agent-template .agent-items-we-offer-title {
   border-bottom: black 3px dotted;
   margin: 30px 0;
   font-size: 20px;
 }
-
 #players-agent-template .agent-items-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
-
 #players-agent-template .agent-items-wrapper .agent-item {
   width: 60%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 3px;
   border-radius: 5px;
   margin: 35px 0;
 }
-
 #players-agent-template .agent-items-wrapper .agent-item .item-title {
   border-bottom: black 2px solid;
   margin-bottom: 10px;
   font-size: 18px;
   letter-spacing: 0.5px;
 }
-
 #players-agent-template .agent-items-wrapper .agent-item .item-description {
   text-align: center;
   letter-spacing: 0.5px;
 }
-
 #players-agent-template .agent-items-wrapper .agent-item:nth-child(odd) {
   position: relative;
   right: 10%;
   background-color: rgba(255, 255, 224, 0.5);
 }
-
 #players-agent-template .agent-items-wrapper .agent-item:nth-child(even) {
   position: relative;
   left: 10%;
@@ -186,7 +154,6 @@ input:invalid {
     left: 30%;
   }
 }
-
 @media screen and (min-width: 1024px) {
   #players-agent-template .agent-items-wrapper .agent-item:nth-child(odd) {
     right: 45%;
@@ -194,5 +161,4 @@ input:invalid {
   #players-agent-template .agent-items-wrapper .agent-item:nth-child(even) {
     left: 45%;
   }
-}
-/*# sourceMappingURL=players-agent.css.map */
+}/*# sourceMappingURL=players-agent.css.map */
