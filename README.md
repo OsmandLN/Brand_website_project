@@ -42,3 +42,5 @@ _Note:_
 ---
 
 OsmandLN
+
+Special thanks to the photograghers whose photos are used in this project.
