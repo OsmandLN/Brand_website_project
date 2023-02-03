@@ -29,7 +29,7 @@ building a baseball agent website page is an ideal way to sharpen must-have skil
    
 4. Turn on the server.
 
-   `nodemon app.js`
+   `node app.js`
    
 5. Go to localhost:3000 and enjoy the website!
 
